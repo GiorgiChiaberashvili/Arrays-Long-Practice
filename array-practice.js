@@ -20,7 +20,7 @@ const findMinimum = arr => {
 const runningSum = arr => {
 
   // Time complexity is O(n) because its just iterates once through all elements.
-  // Space complexity is O(1) because it is proportional to arr length.
+  // Space complexity is O(n) because it is proportional to arr length.
   // Set to variables and push to total Sum of index
 
   // Your code here
@@ -54,7 +54,7 @@ const evenNumOfChars = arr => {
 };
 
 // Time Complexity is O(n2) due two nested for loops.
-// Space Complexity is also O(n2) because of the pair comparison of two loops.
+// Space Complexity is also O(n) because of the pair comparison of two loops.
 // Iterate through 2 loops compare i's , if one is bigger than other add to count
 const smallerThanCurr = arr => {
 
@@ -75,7 +75,7 @@ const smallerThanCurr = arr => {
 }
 
 // Time Complexity is equal to 0(n2)
-// Space Complexity is equal to 0(n2)
+// Space Complexity is equal to 0(1)
 // Iterate through 2 loops and if i' of both loops equal to target
 // return true or false
 const twoSum = (arr, target) => {
@@ -91,7 +91,7 @@ const twoSum = (arr, target) => {
   }
 };
 
-// Time complexity is equal to O(n)
+// Time complexity is equal to O(log n)
 // Space complexity is equal to O(n)
 // Sort from biggest to smallest substract second from 1st and return second i
 
@@ -104,8 +104,8 @@ const secondLargest = arr => {
 
 };
 
-//Time complexity is equal to O(n2)
-// Space complexity is equal to O(n2)
+//Time complexity is equal to O(n)
+// Space complexity is equal to O(1)
 //This function uses a Fisher-Yates shuffle algorithm to shuffle the array.
 
 const shuffle = (arr) => {
